@@ -1,0 +1,29 @@
+{
+  "name": "dsh-gateway-identity-compat",
+  "version": "0.1.0",
+  "description": "DeepSeek Harness plugin: rewrites second-person identity sentences in the system prompt so gateways that normalize 'You are X, built by Y' declarations do not mangle them.",
+  "type": "module",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "exports": {
+    ".": { "types": "./index.d.ts", "default": "./index.js" },
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./locale/*.json": "./locale/*.json",
+    "./package.json": "./package.json"
+  },
+  "files": ["index.js", "rewrite.js", "index.d.ts", "cordis.patch.yml", "locale/*.json", "README.md", "LICENSE"],
+  "scripts": {
+    "test": "node --test test/"
+  },
+  "engines": {
+    "node": ">=24.9.0",
+    "dsh": ">=0.2.2-rc.1 <0.3.0"
+  },
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/schemastery": "*"
+  },
+  "license": "MIT"
+}

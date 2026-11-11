@@ -1,0 +1,3 @@
+- insert:
+    - id: gateway-identity-compat
+      name: dsh-gateway-identity-compat

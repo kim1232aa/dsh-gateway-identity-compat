@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Gateway identity compatibility",
+    "description": "Rewrites \"You are X, built by Y\" prompt sentences to a third-person form for gateways that rewrite them."
+  }
+}

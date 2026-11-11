@@ -20,7 +20,7 @@ Within the first `scanChars` characters of the assembled prompt, a sentence is r
 ## Install
 
 ```sh
-dsh plugin --profile <name> add github:<owner>/dsh-gateway-identity-compat#<commit>
+dsh plugin --profile <name> add github:kim1232aa/dsh-gateway-identity-compat#<commit>
 ```
 
 The package is plain ESM with no build step. Pin a commit: installing from git runs package code on your machine. With pnpm >= 10 you may need to allow the package in the profile's `pnpm-workspace.yaml` if it asks.
